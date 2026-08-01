@@ -1,7 +1,23 @@
 aid: paintzen
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/paintzen.png
 name: PaintZen
-description: PaintZen is a company surfaced as a portfolio company of bullpen-capital and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: PaintZen is a residential painting services platform that connects homeowners with vetted
+  professional painters, offering instant online quotes and booking for interior and exterior painting,
+  deck staining, epoxy flooring, and drywall repair. Backed by Bullpen Capital, the company operates its
+  proprietary Zenify platform and now runs under Arch Painting out of Woburn, Massachusetts. As of this
+  enrichment pass PaintZen publishes a consumer-facing website with online quoting and financing but no
+  public developer program, API documentation, SDKs, or machine-readable API surface.
 url: https://raw.githubusercontent.com/api-evangelist/paintzen/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Home Services
+- Painting
+- Home Improvement
+- Marketplace
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +42,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/paintzen-domain-security.yml
 - type: Website
   url: https://www.paintzen.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
